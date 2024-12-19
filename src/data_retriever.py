@@ -7,7 +7,7 @@ Created on Thu Dec 19 00:38:33 2024
 
 import os
 import csv
-from src.api_handler import spotify  # On importe l'objet 'spotify' connecté depuis le fichier api_handler.py
+from api_handler import spotify  # On importe l'objet 'spotify' connecté depuis le fichier api_handler.py
 
 def get_top_hits(year):
     """Récupère la playlist 'Top Hits of YYYY' et les informations associées"""
