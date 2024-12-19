@@ -1,23 +1,46 @@
-# Sujet Spotify API
+# Spotify API Project
 
-# Introduction
+## Description
+Ce projet utilise l'API Spotify pour récupérer, analyser et visualiser des données des playlists "Top Hits" de 2019 à 2023. Il explore les relations entre la popularité des artistes, leurs followers, et leurs tracks, ainsi que l'évolution des genres musicaux.
 
-L’objectif de ce test technique est la réalisation d’un script Python permettant de récupérer et d’analyser des données disponibles sur l’API publique de Spotify (disponible [ici](https://developer.spotify.com/documentation/web-api)). La durée de réalisation de ce test ne devrait pas excéder une demi-journée. 
+## Contenu
+- **Données** : Les données consolidées sont dans le fichier `data/top_hits.csv`.
+- **Visualisations** : Générées dans le dossier `visuals/`.
+- **Scripts** : Tous les scripts Python sont dans le dossier `src/`.
+### **1. `api_handler.py`**
+**Rôle :**  
+Ce script gère la connexion à l'API publique de Spotify. Il permet d'authentifier l'application et initialise un objet `Spotify` pour interagir avec l'API.
 
-# Objectifs
+---
 
-1. Télécharger et formater les tracks présents dans les playlists réalisées par Spotify “**Top Hits of YYYY**” sur les hits des 5 dernières années (2019 à 2023). On souhaite récupérer notamment : 
-    1. Les informations liées aux artistes (nom de l’artiste, nombre de followers, genres associés à l’artiste, popularité de l’artiste)
-    2. Les informations liées aux tracks (nom du track, nom de l’album associé, date de sortie de l’album, durée du track, popularité du track)
-2. Proposer une (ou plusieurs) visualisation(s) permettant de répondre aux questions suivantes : 
-    1. La popularité d’un artiste est-elle corrélée à son nombre de followers ? Ou à la popularité de ses tracks ? 
-    2. Y a-t-il une évolution des genres les plus écoutés entre 2019 et 2023 ?
-3. **(Optionnel, libre**) Proposer des visualisations supplémentaires pouvant être intéressantes. 
+### **2. `data_retriever.py`**
+**Rôle :**  
+Ce script interroge l'API Spotify pour récupérer les données des playlists "Top Hits of YYYY" (de 2019 à 2023) et les sauvegarde dans un fichier consolidé au format CSV.
 
-Pour les visualisations, elles doivent être accompagnées de **courts textes explicatifs** répondant aux questions. 
+---
 
-# Critères d’évaluation
+### **3. `data_analysis.py`**
+**Rôle :**  
+Ce script effectue l'analyse des données et génère des visualisations basées sur les données récupérées pour répondre aux questions du sujet.
 
-- Ton code doit être développé dans le but d’être **relu et exécuté facilement** sur un système utilisant Python 3.8
-- Utilisation de bibliothèques publiques uniquement
-- Le code doit être versionné via Git
+
+## Installation
+1. Clonez ce dépôt :
+
+   git clone <URL>
+   cd spotify_api_project
+
+2. Installez les dépendances : 
+  
+  pip install -r requirements.txt
+
+
+## Utilisation 
+
+Exécutez avec python les scripts selon l'ordre suivant :
+
+src/data_retriever.py : Récupération des données
+src/data_analysis.py : Analyses et visualisations 
+
+## Résultats : 
+Les résultats/réponses sont décrits dans le fichier REPORT.md.
