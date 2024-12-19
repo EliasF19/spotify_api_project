@@ -40,6 +40,7 @@ Ce script effectue l'analyse des données et génère des visualisations basées
 Exécutez avec python les scripts selon l'ordre suivant :
 
 src/data_retriever.py : Récupération des données
+
 src/data_analysis.py : Analyses et visualisations 
 
 ## Résultats : 
