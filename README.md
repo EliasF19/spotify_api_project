@@ -28,6 +28,7 @@ Ce script effectue l'analyse des données et génère des visualisations basées
 1. Clonez ce dépôt :
 
    git clone <URL>
+
    cd spotify_api_project
 
 2. Installez les dépendances : 
