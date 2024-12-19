@@ -13,15 +13,16 @@ Pour répondre à cette question, nous avons réalisé les visualisations suivan
 
 artist_popularity vs track_popularity (0.38) :
 - Corrélation modérée.
+
 artist_popularity vs artist_followers (0.68) :
 - Corrélation forte. Les artistes avec plus de followers tendent à être plus populaires bien que ce ne soit pas absolu.
 
 2. **Nuage de points : Popularité vs Nombre de Followers (`correlation_artist_followers.png`)**  
    Ce graphique illustre la relation directe entre la popularité de l’artiste et son nombre de followers. Le nuage de points permet de mettre en évidence la densité et les tendances dans les données.  
 
-   ![Corrélation entre popularité et nombre de followers](visuals/correlation_artist_followers.png)
+   ![Corrélation entre popularité et nombre de followers](visuals/popularity_vs_followers.png)
 
-   Cela vient confirmer notre première interprétation, les artistes ayant plus de followers tendent à être plus populaires. Cependant, au-delà d’un certain seuil (50M+ followers), la popularité ne varie que très peu.
+   Cela vient confirmer notre première interprétation, les artistes ayant plus de followers tendent à être plus populaires. Cependant, au-delà d’un certain seuil (+50M followers) la popularité ne varie que très peu.
 
 3. **Nuage de points : Popularité de l'artiste vs Popularité des tracks (`artist_vs_track_popularity.png`)**  
    Ce graphique explore la corrélation entre la popularité d’un artiste et celle de ses tracks. 
@@ -40,11 +41,12 @@ Pour analyser cette question, nous avons utilisé un **graphe en lignes (`sns.li
 - **Type de visualisation :**  
     - Nous avons extrait les 10 genres les plus écoutés et observé leur évolution annuelle.
 
-   ![Évolution des genres musicaux](visuals/evolution_genres.png)
+   ![Évolution des genres musicaux](visuals/genres_evolution.png)
 
 Genres dominants :
 - Le genre "pop" est constant et largement populaire sur toute la période.
 - Le genre "Unknown" connaît une forte montée (surtout après 2021) ce qui peut représenter des données manquantes ou des artistes moins catégorisés.
+
 Déclin de certains genres :
 - Des genres comme "art pop" ou "canadian pop" montrent une diminution après 2021
 
