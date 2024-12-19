@@ -21,11 +21,14 @@ client_secret = os.getenv('SPOTIPY_CLIENT_SECRET')
 auth_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 spotify = Spotify(auth_manager=auth_manager)
 
+# On rend l'objet 'spotify' disponible pour d'autres modules
+__all__ = ['spotify']
+
 def test_connection():
     results = spotify.search(q="Top Hits", limit=1)
     print("Connexion réussie ! Voici un exemple de résultat :")
     print(results)
 
 # Décommentez la ligne ci-dessous uniquement pour tester la connection
-# test_connection()
+#test_connection()
 
